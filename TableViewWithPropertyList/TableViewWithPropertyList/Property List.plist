@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cell0</key>
+	<dict>
+		<key>image</key>
+		<string>djTux.png</string>
+		<key>subtitle</key>
+		<string>Music</string>
+		<key>title</key>
+		<string>DJ Tux</string>
+	</dict>
+	<key>cell1</key>
+	<dict>
+		<key>image</key>
+		<string>einsteinTux.png</string>
+		<key>subtitle</key>
+		<string>Science</string>
+		<key>title</key>
+		<string>Einstein</string>
+	</dict>
+	<key>cell2</key>
+	<dict>
+		<key>image</key>
+		<string>indianaTux.png</string>
+		<key>subtitle</key>
+		<string>Adventure</string>
+		<key>title</key>
+		<string>Indiana</string>
+	</dict>
+	<key>cell3</key>
+	<dict>
+		<key>image</key>
+		<string>matrixTux.png</string>
+		<key>subtitle</key>
+		<string>Science Fiction</string>
+		<key>title</key>
+		<string>NEO</string>
+	</dict>
+	<key>cell4</key>
+	<dict>
+		<key>image</key>
+		<string>ramboTux.png</string>
+		<key>subtitle</key>
+		<string>War</string>
+		<key>title</key>
+		<string>Rambo</string>
+	</dict>
+	<key>cell5</key>
+	<dict>
+		<key>image</key>
+		<string>samouraiTux.png</string>
+		<key>subtitle</key>
+		<string>War</string>
+		<key>title</key>
+		<string>Samourai</string>
+	</dict>
+	<key>cell6</key>
+	<dict>
+		<key>image</key>
+		<string>scienceTux.png</string>
+		<key>subtitle</key>
+		<string>Science</string>
+		<key>title</key>
+		<string>Scientist</string>
+	</dict>
+	<key>cell7</key>
+	<dict>
+		<key>image</key>
+		<string>yodaTux.png</string>
+		<key>subtitle</key>
+		<string>Star Wars</string>
+		<key>title</key>
+		<string>Yoda</string>
+	</dict>
+</dict>
+</plist>

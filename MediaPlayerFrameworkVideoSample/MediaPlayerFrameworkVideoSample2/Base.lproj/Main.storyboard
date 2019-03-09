@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="QcQ-Ic-HoA">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="eMG-BD-dMf">
+            <objects>
+                <viewController id="QcQ-Ic-HoA" customClass="ViewController" customModule="MediaPlayerFrameworkVideoSample2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="40p-WN-Fga"/>
+                        <viewControllerLayoutGuide type="bottom" id="o7z-S9-Kzs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DA6-Y0-8Hd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZW7-f6-de2">
+                                <state key="normal" title="PLAY VIDEO"/>
+                                <connections>
+                                    <segue destination="fNd-J6-SLM" kind="modal" id="Mmy-7A-wEa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZW7-f6-de2" firstAttribute="centerY" secondItem="DA6-Y0-8Hd" secondAttribute="centerY" id="OKQ-xA-xEJ"/>
+                            <constraint firstItem="ZW7-f6-de2" firstAttribute="centerX" secondItem="DA6-Y0-8Hd" secondAttribute="centerX" id="uu1-L1-iQK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cjt-JD-3vo" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234.66666666666666" y="366.36000000000001"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="iqT-nB-uED">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="fNd-J6-SLM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AtM-V3-D75"/>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WqO-lC-P7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="656" y="366"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

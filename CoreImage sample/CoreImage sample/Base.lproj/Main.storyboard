@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="8Cr-5Q-WPv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Gr6-11-yfy">
+            <objects>
+                <viewController id="8Cr-5Q-WPv" customClass="ViewController" customModule="CoreImage_sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fAn-ra-kwb"/>
+                        <viewControllerLayoutGuide type="bottom" id="yeB-cA-ewp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BeY-mu-KXf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sbr-c4-NuS">
+                                <rect key="frame" x="41" y="361" width="292" height="31"/>
+                                <connections>
+                                    <action selector="slider:" destination="8Cr-5Q-WPv" eventType="valueChanged" id="Dxo-Ko-hhx"/>
+                                </connections>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YIj-MV-szK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="332"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="332" id="usL-65-qhO"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjD-bl-z9s">
+                                <rect key="frame" x="58" y="421" width="39" height="30"/>
+                                <state key="normal" title="Sepia">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sepia:" destination="8Cr-5Q-WPv" eventType="touchUpInside" id="16e-df-dGu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbU-yK-UHC">
+                                <rect key="frame" x="148" y="421" width="58" height="30"/>
+                                <state key="normal" title="Vignette">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="vignette:" destination="8Cr-5Q-WPv" eventType="touchUpInside" id="y2p-uj-zCb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ye-kZ-Rx8">
+                                <rect key="frame" x="277" y="421" width="40" height="30"/>
+                                <state key="normal" title="Invert">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="invert:" destination="8Cr-5Q-WPv" eventType="touchUpInside" id="mIn-ST-VGI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSB-eH-D06">
+                                <rect key="frame" x="58" y="459" width="41" height="30"/>
+                                <state key="normal" title="Photo">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="photo:" destination="8Cr-5Q-WPv" eventType="touchUpInside" id="UT2-78-Bha"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krj-ST-6QY">
+                                <rect key="frame" x="136" y="459" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Perspective">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="perspective:" destination="8Cr-5Q-WPv" eventType="touchUpInside" id="QNR-Xo-OCe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjq-1I-L25">
+                                <rect key="frame" x="254" y="459" width="63" height="30"/>
+                                <state key="normal" title="Gaussian">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="gaussian:" destination="8Cr-5Q-WPv" eventType="touchUpInside" id="otE-8F-7xH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YIj-MV-szK" firstAttribute="leading" secondItem="BeY-mu-KXf" secondAttribute="leading" id="4xC-bj-faT"/>
+                            <constraint firstItem="Sbr-c4-NuS" firstAttribute="leading" secondItem="BeY-mu-KXf" secondAttribute="leadingMargin" constant="27" id="AKw-lR-hdf"/>
+                            <constraint firstItem="PjD-bl-z9s" firstAttribute="leading" secondItem="qSB-eH-D06" secondAttribute="leading" id="BsP-Ga-ll5"/>
+                            <constraint firstItem="PjD-bl-z9s" firstAttribute="baseline" secondItem="kbU-yK-UHC" secondAttribute="baseline" id="Dha-xX-4jA"/>
+                            <constraint firstItem="PjD-bl-z9s" firstAttribute="top" secondItem="Sbr-c4-NuS" secondAttribute="bottom" constant="30" id="F01-BT-KQi"/>
+                            <constraint firstItem="Sbr-c4-NuS" firstAttribute="top" secondItem="YIj-MV-szK" secondAttribute="bottom" constant="29" id="KPu-ve-5jd"/>
+                            <constraint firstItem="PjD-bl-z9s" firstAttribute="leading" secondItem="BeY-mu-KXf" secondAttribute="leadingMargin" constant="42" id="Mla-9g-ioG"/>
+                            <constraint firstItem="8ye-kZ-Rx8" firstAttribute="trailing" secondItem="qjq-1I-L25" secondAttribute="trailing" id="Rdy-rz-xrh"/>
+                            <constraint firstItem="Sbr-c4-NuS" firstAttribute="centerX" secondItem="YIj-MV-szK" secondAttribute="centerX" id="S2Z-pe-bqD"/>
+                            <constraint firstItem="kbU-yK-UHC" firstAttribute="leading" secondItem="PjD-bl-z9s" secondAttribute="trailing" constant="51" id="SFa-sz-Hu6"/>
+                            <constraint firstItem="8ye-kZ-Rx8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kbU-yK-UHC" secondAttribute="trailing" symbolic="YES" id="VRs-Gh-5be"/>
+                            <constraint firstItem="YIj-MV-szK" firstAttribute="top" secondItem="BeY-mu-KXf" secondAttribute="top" id="VwV-xk-5lH"/>
+                            <constraint firstItem="PjD-bl-z9s" firstAttribute="baseline" secondItem="8ye-kZ-Rx8" secondAttribute="baseline" id="YjF-te-uyT"/>
+                            <constraint firstAttribute="trailing" secondItem="YIj-MV-szK" secondAttribute="trailing" id="abk-Pq-mWZ"/>
+                            <constraint firstItem="qjq-1I-L25" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BeY-mu-KXf" secondAttribute="leading" constant="20" symbolic="YES" id="h3C-44-B0J"/>
+                            <constraint firstItem="qjq-1I-L25" firstAttribute="top" secondItem="8ye-kZ-Rx8" secondAttribute="bottom" constant="8" symbolic="YES" id="hS9-hH-zsX"/>
+                            <constraint firstItem="qSB-eH-D06" firstAttribute="top" secondItem="PjD-bl-z9s" secondAttribute="bottom" constant="8" symbolic="YES" id="iFe-Fw-uaC"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qSB-eH-D06" secondAttribute="trailing" constant="20" symbolic="YES" id="ju5-Uc-URc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8ye-kZ-Rx8" secondAttribute="trailing" constant="42" id="ujj-g7-Frg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myImage" destination="YIj-MV-szK" id="9ES-ir-KNp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXc-PS-Y96" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.5" y="383.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image.jpg" width="640" height="480"/>
+    </resources>
+</document>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="YZ2-Or-npT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="2wj-mT-Jx5">
+            <objects>
+                <viewController id="YZ2-Or-npT" customClass="ViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pqi-OV-NSu"/>
+                        <viewControllerLayoutGuide type="bottom" id="V3A-f7-aie"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i7q-Kb-bHu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="h4H-om-gLP">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="YZ2-Or-npT" id="tD5-sn-uig"/>
+                                    <outlet property="delegate" destination="YZ2-Or-npT" id="eNd-bH-tXa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="V3A-f7-aie" firstAttribute="top" secondItem="h4H-om-gLP" secondAttribute="bottom" id="3K9-0b-6MK"/>
+                            <constraint firstItem="h4H-om-gLP" firstAttribute="top" secondItem="i7q-Kb-bHu" secondAttribute="top" constant="40" id="NeH-DF-Jrs"/>
+                            <constraint firstAttribute="trailing" secondItem="h4H-om-gLP" secondAttribute="trailing" id="YcT-w6-5J2"/>
+                            <constraint firstItem="h4H-om-gLP" firstAttribute="leading" secondItem="i7q-Kb-bHu" secondAttribute="leading" id="eWR-e0-mSN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6x-RW-GhK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161.5" y="365.5"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
